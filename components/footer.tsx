@@ -14,18 +14,18 @@
 //         <div>
 //           <h3 className="text-gray-500 font-semibold mb-4">Links</h3>
 //           <ul className="space-y-2">
-//             <li><a href="#" className="text-black">Home</a></li>
-//             <li><a href="#" className="text-black">Shop</a></li>
-//             <li><a href="#" className="text-black">About</a></li>
-//             <li><a href="#" className="text-black">Contact</a></li>
+//             <li><Link href="#" className="text-black">Home</Link></li>
+//             <li><Link href="#" className="text-black">Shop</Link></li>
+//             <li><Link href="#" className="text-black">About</Link></li>
+//             <li><Link href="#" className="text-black">Contact</Link></li>
 //           </ul>
 //         </div>
 //         <div>
 //           <h3 className="text-gray-500 font-semibold mb-4">Help</h3>
 //           <ul className="space-y-2">
-//             <li><a href="#" className="text-black">Payment Options</a></li>
-//             <li><a href="#" className="text-black">Returns</a></li>
-//             <li><a href="#" className="text-black">Privacy Policies</a></li>
+//             <li><Link href="#" className="text-black">Payment Options</Link></li>
+//             <li><Link href="#" className="text-black">Returns</Link></li>
+//             <li><Link href="#" className="text-black">Privacy Policies</Link></li>
 //           </ul>
 //         </div>
 //         <div>
@@ -62,18 +62,18 @@ const Footer = () => {
         <div>
           <h3 className="text-gray-500 font-semibold mb-4">Links</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-black">Home</a></li>
-            <li><a href="#" className="text-black">Shop</a></li>
-            <li><a href="#" className="text-black">About</a></li>
-            <li><a href="#" className="text-black">Contact</a></li>
+            <li><Link href="#" className="text-black">Home</Link></li>
+            <li><Link href="#" className="text-black">Shop</Link></li>
+            <li><Link href="#" className="text-black">About</Link></li>
+            <li><Link href="#" className="text-black">Contact</Link></li>
           </ul>
         </div>
         <div>
           <h3 className="text-gray-500 font-semibold mb-4">Help</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-black">Payment Options</a></li>
-            <li><a href="#" className="text-black">Returns</a></li>
-            <li><a href="#" className="text-black">Privacy Policies</a></li>
+            <li><Link href="#" className="text-black">Payment Options</Link></li>
+            <li><Link href="#" className="text-black">Returns</Link></li>
+            <li><Link href="#" className="text-black">Privacy Policies</Link></li>
           </ul>
         </div>
         <div>

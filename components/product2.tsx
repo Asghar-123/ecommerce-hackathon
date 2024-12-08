@@ -17,7 +17,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px]">
 //             <img
 //               src="/Images.png"
-//               alt="Stylish cafe chair in a bright room"
+//               alt="Stylish cafe chair in Link bright room"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-2">
@@ -34,7 +34,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px] ">
 //             <img
 //               src="https://storage.googleapis.com/a1aa/image/lhUrbAWtt0IuHtSANDMrVnE4if7DjZMSCAtuWoCwusQIDY8JA.jpg"
-//               alt="Stylish cafe chair in a dark room"
+//               alt="Stylish cafe chair in Link dark room"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-4">
@@ -47,15 +47,15 @@
 //                 Add to cart
 //               </button>
 //               <div className="absolute bottom-4 left-4 text-white space-x-4">
-//                 <a href="#" className="hover:text-gray-300">
+//                 <Link href="#" className="hover:text-gray-300">
 //                   <i className="fas fa-share"></i> Share
-//                 </a>
-//                 <a href="#" className="hover:text-gray-300">
+//                 </Link>
+//                 <Link href="#" className="hover:text-gray-300">
 //                   <i className="fas fa-exchange-alt"></i> Compare
-//                 </a>
-//                 <a href="#" className="hover:text-gray-300">
+//                 </Link>
+//                 <Link href="#" className="hover:text-gray-300">
 //                   <i className="fas fa-heart"></i> Like
-//                 </a>
+//                 </Link>
 //               </div>
 //             </div>
 //           </div>
@@ -63,7 +63,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px] ">
 //             <img
 //               src="/sofa.png"
-//               alt="Luxury big sofa in a living room"
+//               alt="Luxury big sofa in Link living room"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-4">
@@ -80,7 +80,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px]">
 //             <img
 //               src="/newsofa.png"
-//               alt="Outdoor bar table and stool in a garden"
+//               alt="Outdoor bar table and stool in Link garden"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-4">
@@ -96,7 +96,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px]">
 //             <img
 //               src="/lamp.png"
-//               alt="Night lamp on a wall"
+//               alt="Night lamp on Link wall"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-4">
@@ -109,7 +109,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px]">
 //             <img
 //               src="/Lsofa.png"
-//               alt="Small mug on a table"
+//               alt="Small mug on Link table"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-4">
@@ -125,7 +125,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px]">
 //             <img
 //               src="/bed.png"
-//               alt="Cute bed set in a bedroom"
+//               alt="Cute bed set in Link bedroom"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-4">
@@ -142,7 +142,7 @@
 //           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-[285px] h-[446px]">
 //             <img
 //               src="/potty.png"
-//               alt="Minimalist flower pot on a table"
+//               alt="Minimalist flower pot on Link table"
 //               className="w-285 h-301 object-cover"
 //             />
 //             <div className="p-4">
@@ -166,6 +166,7 @@
 // }
 
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Product2() {
   return (
@@ -214,15 +215,15 @@ export default function Product2() {
                 Add to cart
               </button>
               <div className="absolute bottom-4 left-4 text-white space-x-4">
-                <a href="#" className="hover:text-gray-300">
+                <Link href="#" className="hover:text-gray-300">
                   <i className="fas fa-share"></i> Share
-                </a>
-                <a href="#" className="hover:text-gray-300">
+                </Link>
+                <Link href="#" className="hover:text-gray-300">
                   <i className="fas fa-exchange-alt"></i> Compare
-                </a>
-                <a href="#" className="hover:text-gray-300">
+                </Link>
+                <Link href="#" className="hover:text-gray-300">
                   <i className="fas fa-heart"></i> Like
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -230,7 +231,7 @@ export default function Product2() {
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden">
             <img
               src="/sofa.png"
-              alt="Luxury big sofa in a living room"
+              alt="Luxury big sofa in Link living room"
               className="w-full h-[301px] object-cover"
             />
             <div className="p-4">
@@ -247,7 +248,7 @@ export default function Product2() {
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden">
             <img
               src="/newsofa.png"
-              alt="Outdoor bar table and stool in a garden"
+              alt="Outdoor bar table and stool in Link garden"
               className="w-full h-[301px] object-cover"
             />
             <div className="p-4">
@@ -263,7 +264,7 @@ export default function Product2() {
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden">
             <img
               src="/lamp.png"
-              alt="Night lamp on a wall"
+              alt="Night lamp on Link wall"
               className="w-full h-[301px] object-cover"
             />
             <div className="p-4">
@@ -276,7 +277,7 @@ export default function Product2() {
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden">
             <img
               src="/Lsofa.png"
-              alt="Small mug on a table"
+              alt="Small mug on Link table"
               className="w-full h-[301px] object-cover"
             />
             <div className="p-4">
@@ -292,7 +293,7 @@ export default function Product2() {
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden">
             <img
               src="/bed.png"
-              alt="Cute bed set in a bedroom"
+              alt="Cute bed set in Link bedroom"
               className="w-full h-[301px] object-cover"
             />
             <div className="p-4">
@@ -309,7 +310,7 @@ export default function Product2() {
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden">
             <img
               src="/potty.png"
-              alt="Minimalist flower pot on a table"
+              alt="Minimalist flower pot on Link table"
               className="w-full h-[301px] object-cover"
             />
             <div className="p-4">
