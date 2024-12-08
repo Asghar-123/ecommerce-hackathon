@@ -19,32 +19,32 @@
 //       </span>
 //      </div>
 //      <nav className="space-x-4">
-//       <a className="text-gray-700 hover:text-gray-900" href="/">
+//       <Link className="text-gray-700 hover:text-gray-900" href="/">
 //        Home
-//       </a>
-//       <a className="text-gray-700 hover:text-gray-900" href="/shop">
+//       </Link>
+//       <Link className="text-gray-700 hover:text-gray-900" href="/shop">
 //        Shop
-//       </a>
-//       <a className="text-gray-700 hover:text-gray-900" href="#">
+//       </Link>
+//       <Link className="text-gray-700 hover:text-gray-900" href="#">
 //        Blog
-//       </a>
-//       <a className="text-gray-700 hover:text-gray-900" href="#">
+//       </Link>
+//       <Link className="text-gray-700 hover:text-gray-900" href="#">
 //        Contact
-//       </a>
+//       </Link>
 //      </nav>
 //      <div className="space-x-4">
-//       <a className="text-gray-700 hover:text-gray-900" href="#">
+//       <Link className="text-gray-700 hover:text-gray-900" href="#">
 //        <i className="fas fa-user">
 //        </i>
-//       </a>
-//       <a className="text-gray-700 hover:text-gray-900" href="#">
+//       </Link>
+//       <Link className="text-gray-700 hover:text-gray-900" href="#">
 //        <i className="fas fa-heart">
 //        </i>
-//       </a>
-//       <a className="text-gray-700 hover:text-gray-900" href="#">
+//       </Link>
+//       <Link className="text-gray-700 hover:text-gray-900" href="#">
 //        <i className="fas fa-shopping-cart">
 //        </i>
-//       </a>
+//       </Link>
 //      </div>
 //     </div>
 //    </header>
@@ -73,6 +73,7 @@
 //   } 
 
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -101,29 +102,29 @@ export default function Navbar() {
                         <span className="text-xl font-bold">Furniro</span>
                     </div>
                     <nav className="space-x-4 hidden md:flex">
-                        <a className="text-gray-700 hover:text-gray-900" href="/">
+                        <Link className="text-gray-700 hover:text-gray-900" href="/">
                             Home
-                        </a>
-                        <a className="text-gray-700 hover:text-gray-900" href="/shop">
+                        </Link>
+                        <Link className="text-gray-700 hover:text-gray-900" href="/shop">
                             Shop
-                        </a>
-                        <a className="text-gray-700 hover:text-gray-900" href="#">
+                        </Link>
+                        <Link className="text-gray-700 hover:text-gray-900" href="#">
                             Blog
-                        </a>
-                        <a className="text-gray-700 hover:text-gray-900" href="#">
+                        </Link>
+                        <Link className="text-gray-700 hover:text-gray-900" href="#">
                             Contact
-                        </a>
+                        </Link>
                     </nav>
                     <div className="space-x-4 flex items-center">
-                        <a className="text-gray-700 hover:text-gray-900" href="#">
+                        <Link className="text-gray-700 hover:text-gray-900" href="#">
                             <i className="fas fa-user"></i>
-                        </a>
-                        <a className="text-gray-700 hover:text-gray-900" href="#">
+                        </Link>
+                        <Link className="text-gray-700 hover:text-gray-900" href="#">
                             <i className="fas fa-heart"></i>
-                        </a>
-                        <a className="text-gray-700 hover:text-gray-900" href="#">
+                        </Link>
+                        <Link className="text-gray-700 hover:text-gray-900" href="#">
                             <i className="fas fa-shopping-cart"></i>
-                        </a>
+                        </Link>
                     </div>
                     {/* Hamburger Menu for Mobile */}
                     <div className="md:hidden flex items-center">
