@@ -20,13 +20,15 @@
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Navbar2 from "@/components/navbar2";
 import Product2 from "@/components/product2";
 import Image from "next/image";
-
 export default function Home() {
   return (
+    <div>
+       <Navbar/>
     <div className="flex flex-col items-center">
-      <Navbar />
+     
 
       {/* Hero Image */}
       <div className="w-full max-w-screen-lg px-4">
@@ -66,6 +68,7 @@ export default function Home() {
       </div>
 
       <Footer />
+    </div>
     </div>
   );
 }

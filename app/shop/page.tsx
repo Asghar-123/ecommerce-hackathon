@@ -437,9 +437,9 @@ export default function Home() {
           <div className="text-2xl font-bold">Furniro</div>
           <nav className="space-x-6 hidden md:flex">
             <Link className="text-gray-700 hover:text-black" href="/">Home</Link>
-            <Link className="text-gray-700 hover:text-black" href="#">Shop</Link>
-            <Link className="text-gray-700 hover:text-black" href="#">Blog</Link>
-            <Link className="text-gray-700 hover:text-black" href="#">Contact</Link>
+            <Link className="text-gray-700 hover:text-black" href="/shop">Shop</Link>
+            <Link className="text-gray-700 hover:text-black" href="/Blog">Blog</Link>
+            <Link className="text-gray-700 hover:text-black" href="/Contact">Contact</Link>
           </nav>
           <div className="space-x-4 flex items-center">
             <Link className="text-gray-700 hover:text-black" href="#"><i className="fas fa-user"></i></Link>
