@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import Navbar2 from "@/components/navbar2";
-import Sidebar from "@/components/sidebar";
+import Image from "next/image";
+
 
 export default function Blog(){
     return(
@@ -34,7 +35,7 @@ export default function Blog(){
       <div className="lg:col-span-2">
         {/* Blog Post 1 */}
         <div className="mb-8">
-          <img
+          <Image
             alt="Laptop on a wooden table with a notebook, pen, glass of water, and a phone"
             className="w-full rounded-lg"
             height={400}
@@ -64,7 +65,7 @@ export default function Blog(){
         </div>
         {/* Blog Post 2 */}
         <div className="mb-8">
-          <img
+          <Image
             alt="Person writing on a planner with a hat on the table"
             className="w-full rounded-lg"
             height={400}
@@ -94,7 +95,7 @@ export default function Blog(){
         </div>
         {/* Blog Post 3 */}
         <div className="mb-8">
-          <img
+          <Image
             alt="Person writing in a notebook with a laptop, coffee, and a book on the table"
             className="w-full rounded-lg"
             height={400}
@@ -192,7 +193,7 @@ export default function Blog(){
           <h3 className="text-xl font-bold mb-4">Recent Posts</h3>
           <ul className="text-gray-700">
             <li className="flex items-center mb-4">
-              <img
+              <Image
                 alt="Thumbnail of a laptop on a wooden table"
                 className="w-12 h-12 rounded-lg mr-4"
                 height={60}
@@ -207,7 +208,7 @@ export default function Blog(){
               </div>
             </li>
             <li className="flex items-center mb-4">
-              <img
+              <Image
                 alt="Thumbnail of a person writing on a planner"
                 className="w-12 h-12 rounded-lg mr-4"
                 height={60}
@@ -222,7 +223,7 @@ export default function Blog(){
               </div>
             </li>
             <li className="flex items-center mb-4">
-              <img
+              <Image
                 alt="Thumbnail of a person writing in a notebook"
                 className="w-12 h-12 rounded-lg mr-4"
                 height={60}
@@ -237,7 +238,7 @@ export default function Blog(){
               </div>
             </li>
             <li className="flex items-center mb-4">
-              <img
+              <Image
                 alt="Thumbnail of a modern home"
                 className="w-12 h-12 rounded-lg mr-4"
                 height={60}
@@ -252,7 +253,7 @@ export default function Blog(){
               </div>
             </li>
             <li className="flex items-center mb-4">
-              <img
+              <Image
                 alt="Thumbnail of a colorful office"
                 className="w-12 h-12 rounded-lg mr-4"
                 height={60}
