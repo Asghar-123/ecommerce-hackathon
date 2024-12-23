@@ -65,11 +65,11 @@ export default function Navbar() {
             </header>
             <main className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
                 <div className="flex-1">
-                    <img
+                    <Image
                         alt="Living room with furniture and plant"
                         className="w-full h-auto"
-                        height="400"
-                        src="https://storage.googleapis.com/a1aa/image/FfwfsDR3ffZeUgY4K2v74eMfPt2DQAFhjPSF4eKNvYfFaYbxnA.jpg"
+                        height={1000}
+                        src="/bg.png"
                         width="600"
                     />
                 </div>

@@ -4,8 +4,9 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Footer from '@/components/footer';
-import Image from 'next/image';
+
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const [itemsToShow, setItemsToShow] = useState(16);

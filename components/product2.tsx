@@ -1,6 +1,7 @@
 
 import Head from 'next/head';
-import Image from 'next/image';
+
+
 import Link from 'next/link';
 
 export default function Product2() {
@@ -22,6 +23,7 @@ export default function Product2() {
               src="/Images.png"
               alt="Stylish cafe chair in a bright room"
               className="w-full h-[301px] object-cover"
+              
               
             />
             <div className="p-4">
