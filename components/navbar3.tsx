@@ -36,7 +36,7 @@ export default function Navbar3() {
           <Link className="text-gray-700 hover:text-gray-900" href="/Blog">
             Blog
           </Link>
-          <Link className="text-gray-700 hover:text-gray-900" href="/contact">
+          <Link className="text-gray-700 hover:text-gray-900" href="/Contact">
             Contact
           </Link>
         </nav>
@@ -90,7 +90,7 @@ export default function Navbar3() {
           <Link className="block text-gray-700 hover:text-gray-900 py-2" href="/Blog">
             Blog
           </Link>
-          <Link className="block text-gray-700 hover:text-gray-900 py-2" href="/contact">
+          <Link className="block text-gray-700 hover:text-gray-900 py-2" href="/Contact">
             Contact
           </Link>
         </nav>
