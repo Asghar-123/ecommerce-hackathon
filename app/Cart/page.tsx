@@ -30,7 +30,7 @@ export default function Cart() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 sm:text-black">
           <div className="bg-white p-4 rounded-lg shadow-md">
             <div className="overflow-x-auto">
               <table className="min-w-full bg-white">
@@ -75,7 +75,7 @@ export default function Cart() {
               <span>Subtotal</span>
               <span>Rs. 250,000.00</span>
             </div>
-            <div className="flex justify-between mb-4 text-sm md:text-base">
+            <div className="flex justify-between mb-4 text-sm sm:text-black md:text-base">
               <span className="font-semibold">Total</span>
               <span className="font-semibold text-yellow-500">Rs. 250,000.00</span>
             </div>
