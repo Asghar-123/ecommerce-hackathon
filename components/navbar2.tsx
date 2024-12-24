@@ -51,15 +51,17 @@ export default function Navbar2(){
                         <Link className="text-gray-700 hover:text-gray-900" href="#">
                             <i className="fas fa-heart"></i>
                         </Link>
-                        <Link className="text-gray-700 hover:text-gray-900" href="#">
+                        <Link className="text-gray-700 hover:text-gray-900" href="/Cart">
                             <i className="fas fa-shopping-cart"></i>
                         </Link>
                     </div>
                      
-                    <div className="md:hidden flex items-center">
+                    <div className="md:open flex items-center">
                         <button className="text-gray-700 hover:text-gray-900">
                             <i className="fas fa-bars"></i>
+                            
                         </button>
+                      
                     </div>
                 </div>
             </header>

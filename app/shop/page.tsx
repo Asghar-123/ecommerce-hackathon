@@ -1,5 +1,3 @@
-
-
 "use client"
 import { useState } from 'react';
 import Head from 'next/head';
@@ -7,6 +5,7 @@ import Footer from '@/components/footer';
 
 import Link from 'next/link';
 import Image from 'next/image';
+import Navbar3 from '@/components/navbar3';
 
 export default function Home() {
   const [itemsToShow, setItemsToShow] = useState(16);
@@ -18,23 +17,8 @@ export default function Home() {
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
-      <header className="bg-white shadow-md">
-        <div className="container mx-auto flex justify-between items-center py-4 px-6">
-          <div className="text-2xl font-bold">Furniro</div>
-          <nav className="space-x-6 hidden md:flex">
-            <Link className="text-gray-700 hover:text-black" href="/">Home</Link>
-            <Link className="text-gray-700 hover:text-black" href="/shop">Shop</Link>
-            <Link className="text-gray-700 hover:text-black" href="/Blog">Blog</Link>
-            <Link className="text-gray-700 hover:text-black" href="/Contact">Contact</Link>
-          </nav>
-          <div className="space-x-4 flex items-center">
-            <Link className="text-gray-700 hover:text-black" href="#"><i className="fas fa-user"></i></Link>
-            <Link className="text-gray-700 hover:text-black" href="#"><i className="fas fa-search"></i></Link>
-            <Link className="text-gray-700 hover:text-black" href="#"><i className="fas fa-heart"></i></Link>
-            <Link className="text-gray-700 hover:text-black" href="#"><i className="fas fa-shopping-cart"></i></Link>
-          </div>
-        </div>
-      </header>
+      <Navbar3/>
+      
 
       <main>
         <section className="relative">
@@ -88,7 +72,7 @@ export default function Home() {
 
         <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-4">
           {/* Product 1 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+         <Link href="/ProductDetail"> <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/Images.png"
               alt="Stylish cafe chair in Link bright room"
@@ -103,7 +87,7 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -30%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 2 */}
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
@@ -118,14 +102,14 @@ export default function Home() {
               <p className="text-lg font-bold text-gray-800">Rp 2.500.000</p>
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-              <button className="bg-yellow-500 text-white px-4 py-2 rounded">
+              <Link href="/Cart"><button className="bg-yellow-500 text-white px-4 py-2 rounded">
                 Add to cart
-              </button>
+              </button></Link>
               <div className="absolute bottom-4 left-4 text-white space-x-4">
                 <Link href="#" className="hover:text-gray-300">
                   <i className="fas fa-share"></i> Share
                 </Link>
-                <Link href="#" className="hover:text-gray-300">
+                <Link href="/Compare" className="hover:text-gray-300">
                   <i className="fas fa-exchange-alt"></i> Compare
                 </Link>
                 <Link href="#" className="hover:text-gray-300">
@@ -136,7 +120,7 @@ export default function Home() {
           </div>
 
           {/* Product 3 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"><div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/sofa.png"
               alt="Luxury big sofa in Link living room"
@@ -151,10 +135,10 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -50%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 4 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"> <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/newsofa.png"
               alt="Outdoor bar table and stool in Link garden"
@@ -168,11 +152,11 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               New
             </div>
-          </div>
+          </div></Link>
         </section>
         <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-4">
           {/* Product 1 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail">  <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/Images.png"
               alt="Stylish cafe chair in Link bright room"
@@ -187,7 +171,7 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -30%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 2 */}
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
@@ -202,14 +186,14 @@ export default function Home() {
               <p className="text-lg font-bold text-gray-800">Rp 2.500.000</p>
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-              <button className="bg-yellow-500 text-white px-4 py-2 rounded">
+              <Link href="/Cart"><button className="bg-yellow-500 text-white px-4 py-2 rounded">
                 Add to cart
-              </button>
+              </button></Link>
               <div className="absolute bottom-4 left-4 text-white space-x-4">
                 <Link href="#" className="hover:text-gray-300">
                   <i className="fas fa-share"></i> Share
                 </Link>
-                <Link href="#" className="hover:text-gray-300">
+                <Link href="/Compare" className="hover:text-gray-300">
                   <i className="fas fa-exchange-alt"></i> Compare
                 </Link>
                 <Link href="#" className="hover:text-gray-300">
@@ -220,7 +204,7 @@ export default function Home() {
           </div>
 
           {/* Product 3 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"><div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/sofa.png"
               alt="Luxury big sofa in Link living room"
@@ -235,10 +219,10 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -50%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 4 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"> <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/newsofa.png"
               alt="Outdoor bar table and stool in Link garden"
@@ -252,11 +236,11 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               New
             </div>
-          </div>
+          </div></Link>
         </section>
         <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-4">
           {/* Product 1 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"><div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/Images.png"
               alt="Stylish cafe chair in Link bright room"
@@ -271,7 +255,7 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -30%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 2 */}
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
@@ -286,14 +270,14 @@ export default function Home() {
               <p className="text-lg font-bold text-gray-800">Rp 2.500.000</p>
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-              <button className="bg-yellow-500 text-white px-4 py-2 rounded">
+             <Link href="/Cart"> <button className="bg-yellow-500 text-white px-4 py-2 rounded">
                 Add to cart
-              </button>
+              </button></Link>
               <div className="absolute bottom-4 left-4 text-white space-x-4">
                 <Link href="#" className="hover:text-gray-300">
                   <i className="fas fa-share"></i> Share
                 </Link>
-                <Link href="#" className="hover:text-gray-300">
+                <Link href="/Compare" className="hover:text-gray-300">
                   <i className="fas fa-exchange-alt"></i> Compare
                 </Link>
                 <Link href="#" className="hover:text-gray-300">
@@ -304,7 +288,7 @@ export default function Home() {
           </div>
 
           {/* Product 3 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"><div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/sofa.png"
               alt="Luxury big sofa in Link living room"
@@ -319,10 +303,10 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -50%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 4 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"> <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/newsofa.png"
               alt="Outdoor bar table and stool in Link garden"
@@ -336,11 +320,11 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               New
             </div>
-          </div>
+          </div></Link>
         </section>
         <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-4">
           {/* Product 1 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"> <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/Images.png"
               alt="Stylish cafe chair in Link bright room"
@@ -355,7 +339,7 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -30%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 2 */}
           <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
@@ -370,14 +354,14 @@ export default function Home() {
               <p className="text-lg font-bold text-gray-800">Rp 2.500.000</p>
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-              <button className="bg-yellow-500 text-white px-4 py-2 rounded">
+              <Link href="/Cart"><button className="bg-yellow-500 text-white px-4 py-2 rounded">
                 Add to cart
-              </button>
+              </button></Link>
               <div className="absolute bottom-4 left-4 text-white space-x-4">
                 <Link href="#" className="hover:text-gray-300">
                   <i className="fas fa-share"></i> Share
                 </Link>
-                <Link href="#" className="hover:text-gray-300">
+                <Link href="/Compare" className="hover:text-gray-300">
                   <i className="fas fa-exchange-alt"></i> Compare
                 </Link>
                 <Link href="#" className="hover:text-gray-300">
@@ -385,10 +369,11 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+            
           </div>
 
           {/* Product 3 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail">  <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/sofa.png"
               alt="Luxury big sofa in Link living room"
@@ -403,10 +388,10 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               -50%
             </div>
-          </div>
+          </div></Link>
 
           {/* Product 4 */}
-          <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
+          <Link href="/ProductDetail"> <div className="relative bg-white shadow-md rounded-lg overflow-hidden w-full h-full">
             <img
               src="/newsofa.png"
               alt="Outdoor bar table and stool in Link garden"
@@ -420,7 +405,7 @@ export default function Home() {
             <div className="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
               New
             </div>
-          </div>
+          </div></Link>
         </section>
         <Image src={"/Frame 72.png"} alt='' width={392} height={90} className='mt-10 ml-[600px]  className="w-full h-auto mx-auto"'/>
           <Image src={"/Frame 161.png"} alt='' width={1440} height={270} className='w-full mt-10  className="w-full h-auto mx-auto"'/>

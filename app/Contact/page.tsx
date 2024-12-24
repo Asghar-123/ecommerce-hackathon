@@ -1,12 +1,12 @@
 import Footer from "@/components/footer";
-import Navbar2 from "@/components/navbar2";
+import Navbar3 from "@/components/navbar3";
 import Image from "next/image";
 
 
 export default function Contact(){
     return(
         <div>
-            <Navbar2/>
+            <Navbar3/>
             <main>
         <section className="relative">
           <img

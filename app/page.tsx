@@ -1,13 +1,13 @@
 
 
 import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
 import Product2 from "@/components/product2";
 import Image from "next/image";
+import Navbar3 from "@/components/navbar3";
 export default function Home() {
   return (
     <div>
-       <Navbar/>
+       <Navbar3/>
     <div className="flex flex-col items-center">
      
 
@@ -50,6 +50,7 @@ export default function Home() {
 
       <Footer />
     </div>
+    
     </div>
   );
 }

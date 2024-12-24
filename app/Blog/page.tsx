@@ -105,7 +105,7 @@ export default function Blog(){
           <div className="flex items-center text-gray-500 text-sm mt-4">
             <i className="fas fa-user mr-2"></i>
             Admin
-            <i className="fas fa-calendar-alt mx-4"></i>
+            <i  className="fas fa-calendar-alt mx-4"></i>
             14 Oct 2022
             <i className="fas fa-folder-open"></i>
             Wood
